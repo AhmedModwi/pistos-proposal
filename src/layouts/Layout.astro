@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} | Pistos Pitch Deck</title>
+    <!-- Fonts: Outfit (EN Heading), Inter (EN Body), Tajawal (AR Heading), IBM Plex Sans Arabic (AR Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#FAFAFA] text-[#1a1a1a] antialiased">
+    <!-- Global Navigation -->
+    <nav class="fixed top-0 w-full bg-[#FAFAFA]/90 backdrop-blur border-b border-[#E5E7EB] z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-heading font-bold text-lg tracking-tight">Pistos Deck</span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="/" class="hover:text-[#A02B2E] transition-colors">1. Strategy</a>
+                <a href="/competitors" class="hover:text-[#A02B2E] transition-colors">2. Market</a>
+                <a href="/visuals" class="hover:text-[#A02B2E] transition-colors">3. Identity</a>
+                <a href="/plan" class="hover:text-[#A02B2E] transition-colors">4. Roadmap</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Entry -->
+    <main class="pt-24 pb-32 max-w-5xl mx-auto px-6">
+        <slot />
+    </main>
+
+    <script>
+        // Re-initialize Lucide icons on page load and view transitions
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+        
+        // Single definition of Intersection Observer for all pages
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            };
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+            document.querySelectorAll('.js-anim-ready').forEach(element => observer.observe(element));
+        });
+    </script>
+</body>
+</html>
