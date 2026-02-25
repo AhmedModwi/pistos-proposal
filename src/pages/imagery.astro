@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="4. Imagery Guidelines">
+    <section class="max-w-4xl mx-auto space-y-16">
+        <div>
+            <h1 class="font-heading text-4xl md:text-5xl font-bold tracking-tight text-pistos-black leading-tight mb-6">
+                4. Imagery Strategy
+            </h1>
+            <p class="text-xl leading-relaxed text-pistos-muted max-w-2xl">
+                We actively avoid generic stock photos of smiling models. Instead, we use real, high-contrast assets that reinforce B2B infrastructure tone.
+            </p>
+        </div>
+
+        <!-- Strategy 1: Architecture & Scale -->
+        <div class="bg-pistos-surface border border-pistos-border p-8 rounded space-y-8" data-aos="fade-up">
+            <h2 class="font-heading text-2xl font-semibold border-b border-pistos-border pb-4">A. Architecture & Scale (Monochrome)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <p class="text-sm text-pistos-muted leading-relaxed">
+                        To project stability and integration within the UAE economy, we use hyper-modern architectural photography (e.g., Dubai skyline, empty corporate interiors, glass structures). 
+                    </p>
+                    <p class="text-sm text-pistos-muted leading-relaxed">
+                        <strong>The Rule:</strong> Convert to high-contrast grayscale to remove emotional bias and match the severe charcoal-black palette.
+                    </p>
+                </div>
+                <div class="border border-pistos-border rounded overflow-hidden relative pt-[100%] group">
+                    <!-- Real example image from Unsplash (Architecture) -->
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1000&auto=format&fit=crop" alt="Dubai Architecture Grayscale" class="absolute inset-0 w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+        </div>
+
+        <!-- Strategy 2: Data & Dashboards -->
+        <div class="bg-pistos-surface border border-pistos-border p-8 rounded space-y-8" data-aos="fade-up">
+            <h2 class="font-heading text-2xl font-semibold border-b border-pistos-border pb-4">B. UI / Data Visualization</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1 border border-pistos-border rounded bg-pistos-bg p-4 flex items-center justify-center relative min-h-[300px]">
+                    <!-- Abstract representation of a dashboard -->
+                    <div class="w-full space-y-4 opacity-80">
+                        <div class="h-4 bg-gray-200 rounded w-1/3"></div>
+                        <div class="space-y-2">
+                            <div class="h-2 bg-pistos-red rounded w-full"></div>
+                            <div class="h-2 bg-pistos-black rounded w-5/6"></div>
+                            <div class="h-2 bg-gray-300 rounded w-4/6"></div>
+                        </div>
+                        <div class="flex space-x-2 pt-4">
+                            <div class="w-12 h-12 rounded-full border-4 border-pistos-black border-t-pistos-red"></div>
+                            <div class="flex-1 border border-pistos-border rounded bg-white relative">
+                                <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-pistos-red to-transparent"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 space-y-4">
+                    <p class="text-sm text-pistos-muted leading-relaxed">
+                        The strongest proof of competence is showing the "machine" at work. We use crisp, zoomed-in, unbranded snippets of data dashboards, calculators, and API flows.
+                    </p>
+                    <p class="text-sm text-pistos-muted leading-relaxed">
+                        <strong>The Rule:</strong> Never use 3D isometric graphics. Stick to strictly 2D flat visuals with 1px borders, simulating the exact CSS constraints of the final product.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Strategy 3: Real Operational Context -->
+        <div class="bg-pistos-surface border border-pistos-border p-8 rounded space-y-8" data-aos="fade-up">
+            <h2 class="font-heading text-2xl font-semibold border-b border-pistos-border pb-4">C. The "Workspace" Reality</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <p class="text-sm text-pistos-muted leading-relaxed">
+                        When human presence is required to imply service delivery, we show the environment—desks, servers, or legal documents—obscuring faces heavily. It is about the <em>process</em>, not the person.
+                    </p>
+                    <p class="text-sm leading-relaxed text-pistos-black bg-pistos-bg p-3 rounded font-mono text-xs border border-pistos-border">
+                        Focus: Documentation, stamps, servers, clean desk setups.
+                    </p>
+                </div>
+                <div class="border border-pistos-border rounded overflow-hidden relative pt-[75%] group">
+                    <!-- Real example image from Unsplash (Workspace/Docs) -->
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1000&auto=format&fit=crop" alt="Legal Documents Workspace" class="absolute inset-0 w-full h-full object-cover grayscale contrast-125 brightness-110 group-hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-between mt-16 mb-32 border-t border-pistos-border pt-8">
+            <a href="/visuals" class="group flex items-center space-x-2 text-pistos-muted hover:text-pistos-black font-medium transition-colors">
+                <i data-lucide="arrow-left" class="w-4 h-4 transform group-hover:-translate-x-1 transition-transform"></i>
+                <span>Prev: 3. Visual Identity</span>
+            </a>
+            <a href="/motion" class="group flex items-center space-x-2 text-pistos-red hover:text-[#852326] font-medium transition-colors">
+                <span>Next: 5. Motion Rationale</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </section>
+</Layout>

@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="2. Market Benchmarks">
     <section class="max-w-4xl mx-auto">
-        <div class="animate-scale js-anim-ready mb-16">
+        <div class="mb-16">
             <h1 class="font-heading text-4xl md:text-5xl font-bold tracking-tight text-pistos-black mb-6 leading-tight">
                 Selling <span class="text-pistos-red">Infrastructure</span>,<br>Not Just Processing.
             </h1>
@@ -16,16 +16,207 @@ import Layout from '../layouts/Layout.astro';
                     Market leaders are investing in custom logic—standalone cost calculators, trade name APIs, and deep 150+ page knowledge hubs. To position Pistos effectively, we must understand and match these technological benchmarks while offering a superior, frictionless user experience.
                 </p>
             </div>
-            <h2 class="font-heading text-2xl font-semibold mb-6 tracking-tight pl-2 border-b border-pistos-border pb-4">The Top 5 Market Benchmarks & Their Value Propositions</h2>
         </div>
+
+        <!-- 1. ELITE FEATURE MATRIX (MOVED TO TOP) -->
+        <div class="mb-16">
+            <h2 class="font-heading text-3xl font-bold mb-4 tracking-tight text-pistos-black" data-aos="fade-right">Elite Features Matrix</h2>
+            <p class="text-pistos-muted mb-10 max-w-3xl leading-relaxed" data-aos="fade-right" data-aos-delay="100">
+                A verified technological breakdown of the top private setup agencies. We excluded Government Entities as their infrastructure scale differs from private advisories. The data reveals a clear mandate: <strong>Calculators and Client Portals are no longer optional for Tier 1 status.</strong>
+            </p>
+
+            <div class="bg-white border text-sm border-pistos-border rounded shadow-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <!-- Mobile instructions -->
+                <div class="md:hidden bg-[#FAFAFA] text-xs text-center p-2 text-pistos-muted border-b border-pistos-border flex items-center justify-center space-x-2">
+                    <i data-lucide="arrow-left-right" class="w-3 h-3"></i><span>Swipe horizontally to view all</span>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left min-w-fit md:min-w-full">
+                        <thead>
+                            <tr class="bg-[#FAFAFA] border-b border-pistos-border text-pistos-black font-heading text-xs md:text-sm">
+                                <th class="p-3 md:p-4 font-bold sticky left-0 bg-[#FAFAFA] z-10 border-r border-pistos-border">Feature Dimension</th>
+                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 flex items-center justify-center space-x-1 text-yellow-600"><i data-lucide="award" class="w-4 h-4"></i><span class="hidden md:inline">Arnifi</span></th>
+                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center">Virtuzone</th>
+                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center">Creative Zone</th>
+                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center bg-blue-50/50">Shuraa</th>
+                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center">Dhanguard</th>
+                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center">Commitbiz</th>
+                                <th class="p-3 md:p-4 font-bold text-center">A&A Associate</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            
+                            <!-- Calculators -->
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border flex items-center space-x-2 whitespace-nowrap">
+                                    <i data-lucide="calculator" class="w-4 h-4 text-pistos-red"></i><span class="text-xs md:text-sm">Interactive Calculators</span>
+                                </td>
+                                <!-- Arnifi --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Virtuzone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Creative Zone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Shuraa --> <td class="p-3 md:p-4 text-center bg-blue-50/50"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Dhanguard --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Commitbiz --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- A&A Associate --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                            </tr>
+
+                            <!-- Portals -->
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border flex items-center space-x-2 whitespace-nowrap">
+                                    <i data-lucide="lock" class="w-4 h-4 text-pistos-red"></i><span class="text-xs md:text-sm">Customer Portals</span>
+                                </td>
+                                <!-- Arnifi --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Virtuzone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Creative Zone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Shuraa --> <td class="p-3 md:p-4 text-center bg-blue-50/50"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Dhanguard --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <!-- Commitbiz --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <!-- A&A Associate --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                            </tr>
+
+                            <!-- AI -->
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border flex items-center space-x-2 whitespace-nowrap">
+                                    <i data-lucide="bot" class="w-4 h-4 text-pistos-red"></i><span class="text-xs md:text-sm">AI Chatbots / Tools</span>
+                                </td>
+                                <!-- Arnifi --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Virtuzone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Creative Zone --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <!-- Shuraa --> <td class="p-3 md:p-4 text-center bg-blue-50/50"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Dhanguard --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <!-- Commitbiz --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <!-- A&A Associate --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                            </tr>
+                            
+                            <!-- Multi-lingual -->
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border flex items-center space-x-2 whitespace-nowrap">
+                                    <i data-lucide="languages" class="w-4 h-4 text-pistos-red"></i><span class="text-xs md:text-sm">Multi-language Support</span>
+                                </td>
+                                <!-- Arnifi --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <!-- Virtuzone --> <td class="p-3 md:p-4 text-center"><i data-lucide="alert-circle" class="w-5 h-5 mx-auto text-yellow-500" title="Partial"></i></td>
+                                <!-- Creative Zone --> <td class="p-3 md:p-4 text-center"><i data-lucide="alert-circle" class="w-5 h-5 mx-auto text-yellow-500" title="Partial"></i></td>
+                                <!-- Shuraa --> <td class="p-3 md:p-4 text-center bg-blue-50/50"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Dhanguard --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <!-- Commitbiz --> <td class="p-3 md:p-4 text-center"><i data-lucide="alert-circle" class="w-5 h-5 mx-auto text-yellow-500" title="Partial"></i></td>
+                                <!-- A&A Associate --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                            </tr>
+
+                            <!-- Content -->
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border flex items-center space-x-2 whitespace-nowrap">
+                                    <i data-lucide="book-open" class="w-4 h-4 text-pistos-red"></i><span class="text-xs md:text-sm">Deep Content Hubs</span>
+                                </td>
+                                <!-- Arnifi --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Virtuzone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Creative Zone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Shuraa --> <td class="p-3 md:p-4 text-center bg-blue-50/50"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Dhanguard --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- Commitbiz --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <!-- A&A Associate --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bg-[#FAFAFA] border-t border-pistos-border p-4 text-xs text-pistos-muted flex items-center justify-between">
+                    <div>
+                        <span class="inline-flex items-center mr-4"><i data-lucide="check-circle-2" class="w-3 h-3 mr-1 text-green-600"></i> Verified Presence</span>
+                        <span class="inline-flex items-center mr-4"><i data-lucide="alert-circle" class="w-3 h-3 mr-1 text-yellow-500"></i> Partial (e.g. Auto-Translate)</span>
+                        <span class="inline-flex items-center"><i data-lucide="x" class="w-3 h-3 mr-1 text-gray-300"></i> Absent</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. WIDGETS EXPLAINING COLUMNS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-24">
+            <div class="bg-gray-50 p-6 rounded border border-gray-200" data-aos="fade-up" data-aos-delay="50">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="bg-white p-2 rounded shadow-sm border border-gray-100">
+                        <i data-lucide="calculator" class="w-5 h-5 text-pistos-red"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900">Interactive Calculators</h4>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Lead-gen tools embedded in the UI allowing clients to self-estimate costs for Free Zone/Mainland setups. This replaces static "Contact Us for Pricing" tactics.
+                </p>
+            </div>
+            
+            <div class="bg-gray-50 p-6 rounded border border-gray-200" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="bg-white p-2 rounded shadow-sm border border-gray-100">
+                        <i data-lucide="lock" class="w-5 h-5 text-pistos-red"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900">Customer Portals</h4>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Dedicated login dashboards for tracking application status, uploading documents, and paying invoices securely, marking the transition from Agency to SaaS.
+                </p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded border border-gray-200" data-aos="fade-up" data-aos-delay="150">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="bg-white p-2 rounded shadow-sm border border-gray-100">
+                        <i data-lucide="languages" class="w-5 h-5 text-pistos-red"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900">Multi-language Support</h4>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    True bilingual architecture (not auto-translate plugins) targeting Native Arabic SEO and layout mirroring (RTL). Shuraa relies heavily on this, bridging international and local investors natively.
+                </p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded border border-gray-200" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="bg-white p-2 rounded shadow-sm border border-gray-100">
+                        <i data-lucide="bot" class="w-5 h-5 text-pistos-red"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900">AI Chatbots / Tools</h4>
+                </div>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Pre-trained AI models built directly into the site (not basic live human chat) capable of answering complex jurisdiction and visa rule questions instantly 24/7.
+                </p>
+            </div>
+        </div>
+
+        <!-- 3. RECOMMENDED SITES TO VISIT -->
+        <h2 class="font-heading text-2xl font-semibold mb-8 tracking-tight pl-2 border-b border-pistos-border pb-4">Recommended Sites to Visit</h2>
             
         <div class="space-y-12">
-            <!-- Benchmark 1 -->
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 js-anim-ready animate-on-scroll bg-white border border-pistos-border p-6 rounded shadow-sm hover:shadow-md transition-shadow group">
-                <div class="md:col-span-4 flex flex-col justify-start border-b md:border-b-0 md:border-r border-pistos-border pb-4 md:pb-0 md:pr-6">
+            <!-- Benchmark 1: Arnifi -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-white border-2 border-yellow-400 p-6 rounded shadow-lg transition-shadow group relative overflow-hidden" data-aos="fade-up">
+                <div class="absolute top-0 right-0 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-bl-lg z-10">
+                    The Gold Standard
+                </div>
+                <div class="md:col-span-4 flex flex-col justify-start border-b md:border-b-0 md:border-r border-gray-100 pb-4 md:pb-0 md:pr-6">
                     <div class="flex items-center space-x-3 mb-2">
-                        <span class="text-xs font-mono text-white bg-pistos-black px-2 py-1 rounded">Interactive Utility</span>
+                        <span class="text-xs font-mono text-white bg-gray-900 px-2 py-1 rounded">Full SaaS Platform</span>
                     </div>
+                    <h3 class="font-heading text-xl font-bold text-gray-900">Arnifi</h3>
+                    <a href="https://arnifi.com" target="_blank" rel="noopener noreferrer" class="text-sm flex items-center space-x-1 text-blue-600 hover:text-blue-800 mt-2 font-mono transition-colors">
+                        <i data-lucide="external-link" class="w-3 h-3"></i><span>arnifi.com</span>
+                    </a>
+                </div>
+                <div class="md:col-span-8 pl-0 md:pl-6 relative">
+                    <div class="absolute top-4 right-4 p-2 opacity-5">
+                        <i data-lucide="server" class="w-24 h-24 text-gray-900"></i>
+                    </div>
+                    <h4 class="font-medium text-gray-900 mb-3 text-lg">Why Visit: Interactive Elements & SaaS Ecosystem</h4>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                        Arnifi is currently the most technologically advanced platform in the market. They don't just sell services; they provide a comprehensive dashboard ecosystem with deeply integrated AI and multiple cost calculators.
+                    </p>
+                    <div class="bg-yellow-50 p-3 rounded border border-yellow-200 text-xs text-yellow-800">
+                        <strong>Must see:</strong> Explore their interactive client portals and deep automated integrations to understand the bar Pistos must surpass.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benchmark 2: A&A Associates -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-white border border-pistos-border p-6 rounded shadow-sm hover:shadow-md transition-shadow group" data-aos="fade-up">
+                <div class="md:col-span-4 flex flex-col justify-start border-b md:border-b-0 md:border-r border-pistos-border pb-4 md:pb-0 md:pr-6">
+                    <span class="text-xs font-mono text-pistos-muted mb-2 block">Interactive Utility</span>
                     <h3 class="font-heading text-xl font-bold text-pistos-black">A&A Associate</h3>
                     <a href="https://aaconsultancy.ae" target="_blank" rel="noopener noreferrer" class="text-sm flex items-center space-x-1 text-pistos-muted hover:text-pistos-black mt-2 font-mono transition-colors">
                         <i data-lucide="external-link" class="w-3 h-3"></i><span>aaconsultancy.ae</span>
@@ -37,7 +228,7 @@ import Layout from '../layouts/Layout.astro';
                     </div>
                     <h4 class="font-medium text-pistos-black mb-3 text-lg">Value Prop: Interactive Lead Generation</h4>
                     <p class="text-sm text-pistos-muted leading-relaxed mb-4">
-                        A&A demonstrates high technological competence. Instead of relying on static text, they provide immediate utility. They have built separate subdomains for an advanced <strong>Cost Calculator</strong> (`calc.aaconsultancy.ae`) and a <strong>Trade Name Checker</strong> (`tnc.aaconsultancy.ae`).
+                        A&A demonstrates high technological competence. Instead of relying on static text, they provide immediate utility. They have built separate subdomains for an advanced Cost Calculator (<code>calc.aaconsultancy.ae</code>) and a Trade Name Checker (<code>tnc.aaconsultancy.ae</code>).
                     </p>
                     <div class="bg-pistos-surface p-3 rounded border border-pistos-border text-xs text-pistos-black">
                         <strong>Market Reality:</strong> They capture client interest by offering free, high-value tools before the client even speaks to an advisor.
@@ -45,8 +236,31 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </div>
 
-            <!-- Benchmark 2 -->
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 js-anim-ready animate-on-scroll bg-white border border-pistos-border p-6 rounded shadow-sm hover:shadow-md transition-shadow group">
+            <!-- Benchmark 3: Absher -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-white border border-pistos-border p-6 rounded shadow-sm hover:shadow-md transition-shadow group" data-aos="fade-up">
+                <div class="md:col-span-4 flex flex-col justify-start border-b md:border-b-0 md:border-r border-pistos-border pb-4 md:pb-0 md:pr-6">
+                    <span class="text-xs font-mono text-pistos-muted mb-2 block">Government Simplicity</span>
+                    <h3 class="font-heading text-xl font-bold text-pistos-black">Absher</h3>
+                    <a href="https://absherbusiness.com/en/" target="_blank" rel="noopener noreferrer" class="text-sm flex items-center space-x-1 text-pistos-muted hover:text-pistos-black mt-2 font-mono transition-colors">
+                        <i data-lucide="external-link" class="w-3 h-3"></i><span>absherbusiness.com</span>
+                    </a>
+                </div>
+                <div class="md:col-span-8 pl-0 md:pl-6 relative">
+                    <div class="absolute top-0 right-0 p-2 opacity-5">
+                        <i data-lucide="zap" class="w-24 h-24 text-pistos-black"></i>
+                    </div>
+                    <h4 class="font-medium text-pistos-black mb-3 text-lg">Why Visit: Absolute Usability & Speed</h4>
+                    <p class="text-sm text-pistos-muted leading-relaxed mb-4">
+                        Absher represents the pinnacle of complex bureaucratic processes distilled into pure, uncompromising simplicity and speed. It proves that Enterprise/Government logic does not have to equal a cluttered, slow UI.
+                    </p>
+                    <div class="bg-pistos-surface p-3 rounded border border-pistos-border text-xs text-pistos-black">
+                        <strong>Must see:</strong> Analyze how a platform serving millions manages to remain frictionless, fast, and relentlessly straightforward.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benchmark 4: HLB HAMT -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-white border border-pistos-border p-6 rounded shadow-sm hover:shadow-md transition-shadow group" data-aos="fade-up">
                 <div class="md:col-span-4 flex flex-col justify-start border-b md:border-b-0 md:border-r border-pistos-border pb-4 md:pb-0 md:pr-6">
                     <span class="text-xs font-mono text-pistos-muted mb-2 block">Institutional Giant</span>
                     <h3 class="font-heading text-xl font-bold text-pistos-black">HLB HAMT</h3>
@@ -68,8 +282,8 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </div>
 
-            <!-- Benchmark 3 -->
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 js-anim-ready animate-on-scroll bg-white border border-pistos-border p-6 rounded shadow-sm hover:shadow-md transition-shadow group">
+            <!-- Benchmark 5: The Accountant LLC -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-white border border-pistos-border p-6 rounded shadow-sm hover:shadow-md transition-shadow group" data-aos="fade-up">
                 <div class="md:col-span-4 flex flex-col justify-start border-b md:border-b-0 md:border-r border-pistos-border pb-4 md:pb-0 md:pr-6">
                     <span class="text-xs font-mono text-pistos-muted mb-2 block">The Hybrid Model</span>
                     <h3 class="font-heading text-xl font-bold text-pistos-black">The Accountant LLC</h3>
@@ -91,8 +305,8 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </div>
 
-            <!-- Benchmark 4 -->
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 js-anim-ready animate-on-scroll bg-white border border-pistos-border p-6 rounded shadow-sm hover:shadow-md transition-shadow group">
+            <!-- Benchmark 6: Farahat & Co -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-white border border-pistos-border p-6 rounded shadow-sm hover:shadow-md transition-shadow group" data-aos="fade-up">
                 <div class="md:col-span-4 flex flex-col justify-start border-b md:border-b-0 md:border-r border-pistos-border pb-4 md:pb-0 md:pr-6">
                     <span class="text-xs font-mono text-pistos-muted mb-2 block">Legacy Integration</span>
                     <h3 class="font-heading text-xl font-bold text-pistos-black">Farahat & Co</h3>
@@ -114,8 +328,8 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </div>
 
-            <!-- Benchmark 5 -->
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 js-anim-ready animate-on-scroll bg-white border border-pistos-border p-6 rounded shadow-sm hover:shadow-md transition-shadow group">
+            <!-- Benchmark 7: NEX Consultants -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-white border border-pistos-border p-6 rounded shadow-sm hover:shadow-md transition-shadow group" data-aos="fade-up">
                 <div class="md:col-span-4 flex flex-col justify-start border-b md:border-b-0 md:border-r border-pistos-border pb-4 md:pb-0 md:pr-6">
                     <span class="text-xs font-mono text-pistos-muted mb-2 block">FinTech Edge</span>
                     <h3 class="font-heading text-xl font-bold text-pistos-black">NEX Consultants</h3>
@@ -139,26 +353,26 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- Final Synthesis -->
-        <div class="mt-24 bg-pistos-black p-10 rounded text-center js-anim-ready animate-on-scroll-delayed shadow-xl">
+        <div class="mt-24 bg-pistos-black p-10 rounded text-center shadow-xl" data-aos="fade-up" data-aos-delay="200">
             <h2 class="font-heading text-2xl md:text-3xl font-bold text-white mb-6">The Pistos Synthesis Strategy</h2>
             <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 text-white/80 font-mono text-sm md:text-base">
                 <div class="flex flex-col items-center">
+                    <span class="font-bold text-white mb-1">Arnifi's Platform</span>
+                    <span class="text-xs">(SaaS Logic)</span>
+                </div>
+                <span class="text-pistos-red text-2xl">+</span>
+                <div class="flex flex-col items-center">
+                    <span class="font-bold text-white mb-1">Absher's Speed</span>
+                    <span class="text-xs">(Absolute Usability)</span>
+                </div>
+                <span class="text-pistos-red text-2xl">+</span>
+                <div class="flex flex-col items-center">
                     <span class="font-bold text-white mb-1">HLB's Weight</span>
-                    <span class="text-xs">(Institutional Look)</span>
-                </div>
-                <span class="text-pistos-red text-2xl">+</span>
-                <div class="flex flex-col items-center">
-                    <span class="font-bold text-white mb-1">A&A's Logic</span>
-                    <span class="text-xs">(Apps > Forms)</span>
-                </div>
-                <span class="text-pistos-red text-2xl">+</span>
-                <div class="flex flex-col items-center">
-                    <span class="font-bold text-white mb-1">Astro's Speed</span>
-                    <span class="text-xs">(UX Superiority)</span>
+                    <span class="text-xs">(Enterprise Trust)</span>
                 </div>
             </div>
             <div class="mt-8 pt-6 border-t border-white/20">
-                <p class="text-lg text-white font-medium">To outmaneuver these benchmarks, we must build a platform that feels like HLB, <br class="hidden md:block">offers the utility of A&A, and loads faster than both.</p>
+                <p class="text-lg text-white font-medium">To outmaneuver these benchmarks, Pistos must operate as a true SaaS like <strong>Arnifi</strong>, <br class="hidden md:block">convert as simply and intuitively as <strong>Absher</strong>, and project the indisputable safety and trust of <strong>HLB</strong>.</p>
             </div>
         </div>
         

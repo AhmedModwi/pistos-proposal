@@ -6,7 +6,7 @@ import Layout from '../layouts/Layout.astro';
     <section class="max-w-4xl mx-auto space-y-32">
         
         <!-- 1. Typography -->
-        <div class="animate-scale js-anim-ready">
+        <div>
             <h2 class="font-heading text-2xl font-semibold mb-6 tracking-tight">1. Bilingual Typography Architecture</h2>
             <div class="grid grid-cols-1 gap-8">
                 <!-- English Typography -->
@@ -22,20 +22,52 @@ import Layout from '../layouts/Layout.astro';
                             <strong>Why Outfit & Inter?</strong> <em>Outfit</em> perfectly matches the geometric sharpness of the Pistos logo (especially the arrow/1 motif), enforcing a modern, tech-forward brand. <em>Inter</em> is utilized for all body copy and UI elements due to its unparalleled legibility in dense forms and financial dashboards, signaling operational competency.
                         </p>
                     </div>
+
+                    <!-- Example 4: UI Elements -->
+                    <div class="pt-4 border-t border-pistos-border">
+                        <div class="text-xs text-pistos-muted mb-3 font-mono">UI Controls &bull; Inter (Medium)</div>
+                        <div class="flex space-x-3">
+                            <button class="bg-pistos-red hover:bg-[#852326] text-white px-6 py-2 rounded text-sm font-sans font-medium transition-colors">Start Setup</button>
+                            <button class="border border-pistos-border text-pistos-black hover:border-pistos-black px-6 py-2 rounded text-sm font-sans font-medium transition-colors">Talk to Advisor</button>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Arabic Typography -->
-                <div class="bg-pistos-surface border border-pistos-border p-8 rounded space-y-6" dir="rtl">
+                <div class="bg-pistos-surface border border-pistos-border p-8 rounded space-y-8 min-h-full" dir="rtl">
                     <h3 class="font-heading text-lg font-bold mb-4 border-b border-pistos-border pb-2 border-l-0 text-right" dir="ltr">Arabic (Bilingual Necessity)</h3>
+                    
+                    <!-- Example 1: Massive Headline -->
                     <div>
-                        <div class="text-xs text-pistos-muted mb-2 font-mono text-left" dir="ltr">Display &bull; Tajawal</div>
-                        <h1 class="font-ar-heading text-3xl font-extrabold tracking-tight text-pistos-black leading-normal">تأسيس بنيوي.</h1>
+                        <div class="text-xs text-pistos-muted mb-2 font-mono text-left" dir="ltr">Display Primary &bull; Tajawal (Extrabold)</div>
+                        <h1 class="font-ar-heading text-4xl md:text-5xl font-extrabold tracking-tight text-pistos-black leading-tight border-r-4 border-pistos-red pr-4">
+                            تأسيس الأعمال.<br>بنية تحتية موثوقة.
+                        </h1>
                     </div>
+
+                    <!-- Example 2: Section Headers -->
                     <div>
-                        <div class="text-xs text-pistos-muted mb-2 font-mono text-left" dir="ltr">Body &bull; IBM Plex Sans AR</div>
-                        <p class="font-sans text-sm leading-relaxed text-pistos-black pl-2 text-left" dir="ltr">
-                            <strong>Why Bilingual Early?</strong> In the digitized UAE market, perfectly balancing a global English interface with an authentic Arabic counterpart (not a literal translation) is the strongest signal of "Local Clout" and government integration. <em>Tajawal</em> was selected for headings because its geometric architecture mirrors Outfit perfectly. <em>IBM Plex</em> handles the Arabic body copy due to its precision with dense financial data.
+                        <div class="text-xs text-pistos-muted mb-2 font-mono text-left" dir="ltr">Display Secondary &bull; Tajawal (Bold)</div>
+                        <h2 class="font-ar-heading text-2xl font-bold text-pistos-black border-r-2 border-pistos-black pr-3">
+                            الضرائب والامتثال المالي
+                        </h2>
+                    </div>
+
+                    <!-- Example 3: Body & Data -->
+                    <div>
+                        <div class="text-xs text-pistos-muted mb-2 font-mono text-left" dir="ltr">Body & Data &bull; IBM Plex Sans Arabic (Regular)</div>
+                        <p class="font-ar-body text-sm leading-relaxed text-pistos-black text-right max-w-xl">
+                            اختيار خطي <strong>Tajawal</strong> و <strong>IBM Plex</strong> ليس عشوائياً. تم دمجها ليعكسا الهوية الهندسية الدقيقة للعلامة التجارية، مع ضمان مقروئية تامة في الجداول المالية والبيانات القانونية المعقدة، تماماً كما تتطلبه المنصات الحكومية الرسمية في الإمارات.
                         </p>
+                    </div>
+
+                    <!-- Example 4: UI Elements -->
+                    <div class="pt-4 border-t border-pistos-border">
+                        <div class="text-xs text-pistos-muted mb-3 font-mono text-left" dir="ltr">UI Controls &bull; IBM Plex Sans Arabic (Medium)</div>
+                        <div class="flex space-x-3 space-x-reverse">
+                            <button class="bg-pistos-red hover:bg-[#852326] text-white px-6 py-2 rounded text-sm font-ar-body font-medium transition-colors">ابدأ التأسيس</button>
+                            <button class="border border-pistos-border hover:border-pistos-black text-pistos-black px-6 py-2 rounded text-sm font-ar-body font-medium transition-colors">تحدث مع مستشار</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -43,26 +75,26 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- 2. Color System -->
         <div class="pt-12 pb-16">
-            <h2 class="font-heading text-2xl font-semibold mb-6 tracking-tight pl-2 js-anim-ready animate-on-scroll">2. Color System (Staggered Flow)</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 js-anim-ready stagger-wrapper">
-                <div class="stagger-item border border-pistos-border rounded p-4 bg-pistos-black text-white">
+            <h2 class="font-heading text-2xl font-semibold mb-6 tracking-tight pl-2" data-aos="fade-right">2. Color System (Staggered Flow)</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="border border-pistos-border rounded p-4 bg-pistos-black text-white" data-aos="fade-left" data-aos-delay="100">
                     <div class="font-medium">Charcoal Black</div>
                     <div class="text-xs opacity-70 mt-1 font-mono">#1A1A1A &bull; Authority</div>
                 </div>
-                <div class="stagger-item border border-pistos-border rounded p-4 bg-pistos-red text-white">
+                <div class="border border-pistos-border rounded p-4 bg-pistos-red text-white" data-aos="fade-left" data-aos-delay="200">
                     <div class="font-medium">Deep Crimson</div>
                     <div class="text-xs opacity-70 mt-1 font-mono">#A02B2E &bull; Action</div>
                 </div>
-                <div class="stagger-item border border-pistos-border rounded p-4 bg-pistos-bg text-pistos-black">
+                <div class="border border-pistos-border rounded p-4 bg-pistos-bg text-pistos-black" data-aos="fade-left" data-aos-delay="300">
                     <div class="font-medium">Off-White</div>
                     <div class="text-xs opacity-70 mt-1 font-mono">#FAFAFA &bull; Base</div>
                 </div>
-                <div class="stagger-item border border-pistos-border rounded p-4 bg-pistos-surface text-pistos-black">
+                <div class="border border-pistos-border rounded p-4 bg-pistos-surface text-pistos-black" data-aos="fade-left" data-aos-delay="400">
                     <div class="font-medium">Pure White</div>
                     <div class="text-xs opacity-70 mt-1 font-mono">#FFFFFF &bull; Cards</div>
                 </div>
             </div>
-            <p class="text-sm text-pistos-muted mt-6 max-w-2xl px-2 js-anim-ready animate-on-scroll-delayed">
+            <p class="text-sm text-pistos-muted mt-6 max-w-2xl px-2" data-aos="fade-up" data-aos-delay="500">
                 <strong>Why these choices?</strong> The palette is strictly derived from the Pistos logo. We avoid generic blues (too common in consulting) and rely heavily on Black for absolute authority. Deep Crimson is used sparingly as the primary conversion color. 
                 <br><br>
                 <em>Crucially:</em> The interface will be <strong>Light Mode Only</strong>. We are selling B2B financial and legal infrastructure; reading dense tax codes or legal documents requires high contrast paper-like visuals, not gaming-style dark modes.
@@ -74,7 +106,7 @@ import Layout from '../layouts/Layout.astro';
             <h2 class="font-heading text-2xl font-semibold mb-6 tracking-tight pl-2">3. Component Architecture</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
-                <div class="bg-pistos-surface border border-pistos-border p-8 rounded space-y-6 animate-on-scroll js-anim-ready">
+                <div class="bg-pistos-surface border border-pistos-border p-8 rounded space-y-6" data-aos="fade-up">
                     <h3 class="font-heading text-lg font-medium mb-4">Interactive Elements</h3>
                     <div class="space-y-4 max-w-sm">
                         <label class="block">
@@ -83,7 +115,7 @@ import Layout from '../layouts/Layout.astro';
                         </label>
                         
                         <div class="flex space-x-3 pt-2">
-                            <button class="bg-pistos-black hover:bg-black text-white px-5 py-2.5 rounded text-sm font-medium transition-colors">
+                            <button class="bg-pistos-red hover:bg-[#852326] text-white px-5 py-2.5 rounded text-sm font-medium transition-colors">
                                 Apply Now
                             </button>
                             <button class="border border-pistos-border hover:border-pistos-black text-pistos-black px-5 py-2.5 rounded text-sm font-medium transition-colors">
@@ -94,7 +126,7 @@ import Layout from '../layouts/Layout.astro';
                 </div>
 
                 <!-- Iconography Strategy (Restored) -->
-                <div class="bg-pistos-bg border border-pistos-border p-8 rounded space-y-4 animate-on-scroll-delayed js-anim-ready">
+                <div class="bg-pistos-bg border border-pistos-border p-8 rounded space-y-4" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="font-heading text-lg font-medium mb-4 pb-2 border-b border-pistos-border">Iconography: Lucide Library</h3>
                     <p class="text-sm text-pistos-muted leading-relaxed mb-6">
                         <strong>Why Lucide Icons?</strong> We selected this open-source library because its stroke-based (not solid) design provides a technical, wireframe aesthetic perfectly complementing our flat system. They imply "software infrastructure" and financial compliance, avoiding the cartoonish look of solid vector illustrations.
@@ -117,33 +149,9 @@ import Layout from '../layouts/Layout.astro';
                 </div>
 
             </div>
-            <p class="text-sm text-pistos-muted mt-6 max-w-2xl px-2 js-anim-ready animate-on-scroll">
+            <p class="text-sm text-pistos-muted mt-6 max-w-2xl px-2" data-aos="fade-up">
                 <strong>Why "Flat" design?</strong> We are avoiding soft drop-shadows and extreme roundness. The design language is crisp, utilizing hard 1px borders and subtle 4px corner radii. This aesthetic feels faster, more technical, and more secure—reminiscent of high-end dashboards (like Stripe or Xero) rather than playful consumer apps.
             </p>
-        </div>
-
-        <!-- 4. Media & Motion Philosophy (Restored as Section 4 in this page) -->
-        <div class="pb-16">
-            <h2 class="font-heading text-2xl font-semibold mb-6 tracking-tight pl-2 js-anim-ready animate-on-scroll">4. Imagery & Motion Rationale</h2>
-            <div class="bg-pistos-surface border border-pistos-border overflow-hidden rounded js-anim-ready animate-on-scroll-delayed">
-                <!-- Conceptual Image Holder -->
-                <div class="w-full h-64 bg-[#FAFAFA] relative border-b border-pistos-border">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <div class="text-center">
-                            <i data-lucide="image" class="w-8 h-8 mx-auto text-pistos-black mb-2 opacity-50"></i>
-                            <span class="text-sm font-medium text-pistos-black opacity-50">High-Contrast Grayscale Photography / Architecture</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-8">
-                    <p class="text-lg leading-relaxed text-pistos-black">
-                        <strong>The Restrained Motion Rules:</strong> As demonstrated by the very scroll unlocking this page, elements slide up slowly (2.8s) and lock into place natively. As discussed regarding Core Web Vitals (CWV), hyper-fast animations degrade the professional B2B tone. Our rule: slow speeds, cubic-bezier easing to simulate mass, and zero repetitive scrubbing.
-                    </p>
-                    <p class="text-lg leading-relaxed text-pistos-black mt-4 border-t border-pistos-border pt-4">
-                        <strong>Image Strategy:</strong> We will actively avoid generic stock photos of smiling models. Imagery must focus on high-contrast architectural structures (the Dubai skyline, modern corporate interiors) or clean data visualizations, firmly embedded within sharp 1px borders without feathering or blur.
-                    </p>
-                </div>
-            </div>
         </div>
 
         <div class="flex justify-between mt-16 mb-32">
@@ -151,8 +159,8 @@ import Layout from '../layouts/Layout.astro';
                 <i data-lucide="arrow-left" class="w-4 h-4 transform group-hover:-translate-x-1 transition-transform"></i>
                 <span>Prev: 2. Market Benchmarks</span>
             </a>
-            <a href="/plan" class="group flex items-center space-x-2 text-pistos-red hover:text-[#852326] font-medium transition-colors">
-                <span>Next: 4. The Execution Plan</span>
+            <a href="/imagery" class="group flex items-center space-x-2 text-pistos-red hover:text-[#852326] font-medium transition-colors">
+                <span>Next: 4. Imagery Guidelines</span>
                 <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
             </a>
         </div>

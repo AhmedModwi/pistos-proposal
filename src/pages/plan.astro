@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="4. Execution Plan">
     <section class="max-w-4xl mx-auto">
-        <div class="animate-scale js-anim-ready mb-16">
+        <div class="mb-16">
             <h1 class="font-heading text-4xl md:text-5xl font-bold tracking-tight text-pistos-black mb-6 leading-tight">
                 The Roadmap: <span class="text-pistos-red">Two Layers Only.</span>
             </h1>
@@ -16,7 +16,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="space-y-12">
             
             <!-- Layer 1 -->
-            <div class="p-8 md:p-10 rounded border border-pistos-black bg-pistos-surface shadow-xl relative overflow-hidden group js-anim-ready animate-on-scroll">
+            <div class="p-8 md:p-10 rounded border border-pistos-black bg-pistos-surface shadow-xl relative overflow-hidden group" data-aos="fade-up">
                 <div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity transform group-hover:scale-110">
                     <i data-lucide="globe" class="w-48 h-48 text-pistos-black"></i>
                 </div>
@@ -47,7 +47,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
 
             <!-- Layer 2 -->
-            <div class="p-8 md:p-10 rounded border border-pistos-border bg-[#FAFAFA] relative overflow-hidden group js-anim-ready animate-on-scroll-delayed">
+            <div class="p-8 md:p-10 rounded border border-pistos-border bg-[#FAFAFA] relative overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
                 <div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity transform group-hover:scale-110">
                     <i data-lucide="server" class="w-48 h-48 text-pistos-black"></i>
                 </div>
@@ -84,6 +84,10 @@ import Layout from '../layouts/Layout.astro';
                                 <div class="font-medium text-sm text-pistos-black">4. Activity Selector</div>
                                 <div class="text-xs text-pistos-muted mt-1">Helps users narrow down suitable activities.</div>
                             </div>
+                            <div class="bg-white border border-pistos-border p-3 border-l-4 border-l-pistos-red rounded">
+                                <div class="font-medium text-sm text-pistos-black">5. Gov't API Integration</div>
+                                <div class="text-xs text-pistos-muted mt-1">Live linking to DED (e.g. instant Trade Name Checker).</div>
+                            </div>
                         </div>
 
                         <!-- Internal Vis & Addon -->
@@ -109,17 +113,37 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </div>
 
-            <!-- Out of Scope -->
-            <div class="mt-8 pt-6 border-t border-pistos-border flex items-start space-x-4 js-anim-ready animate-on-scroll-delayed" style="animation-delay: 1.2s;">
-                <i data-lucide="x-circle" class="w-6 h-6 text-pistos-muted mt-1"></i>
-                <div>
-                    <h3 class="font-heading font-bold text-lg text-pistos-black">Out of Scope (For Now)</h3>
-                    <p class="text-sm text-pistos-muted">No full PRO operations system. No employee HR platform. No automated government integrations without official data access.</p>
+            <!-- Future Expansions -->
+            <div class="mt-8 pt-6 border-t border-pistos-border" data-aos="fade-up" data-aos-delay="400">
+                <div class="flex items-start space-x-4 mb-4">
+                    <i data-lucide="fast-forward" class="w-6 h-6 text-pistos-red mt-1"></i>
+                    <div>
+                        <h3 class="font-heading font-bold text-lg text-pistos-black">Future Expansions (What can be added later)</h3>
+                        <p class="text-sm text-pistos-muted">Once Layers 1 and 2 are stable, the architecture easily supports infinite scaling. Examples of future additions:</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pl-10">
+                    <div class="bg-gray-50 border border-gray-200 p-3 rounded">
+                        <strong class="text-xs text-pistos-black block mb-1">Government API Integration</strong>
+                        <span class="text-xs text-pistos-muted">Live linking to DED/Free Zone portals for instant name reservation and license status.</span>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 p-3 rounded">
+                        <strong class="text-xs text-pistos-black block mb-1">Digital Vault & E-Signatures</strong>
+                        <span class="text-xs text-pistos-muted">Secure document uploads with integrated OCR and legally binding digital contract signing.</span>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 p-3 rounded">
+                        <strong class="text-xs text-pistos-black block mb-1">Automated PRO Workflows</strong>
+                        <span class="text-xs text-pistos-muted">Ticketing systems for visa processing, emirates ID tracking, and medical scheduling.</span>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 p-3 rounded">
+                        <strong class="text-xs text-pistos-black block mb-1">Corporate Tax Ecosystem</strong>
+                        <span class="text-xs text-pistos-muted">Direct upsells and dashboards for 'The One Accountant' featuring live bookkeeping metrics.</span>
+                    </div>
                 </div>
             </div>
 
             <!-- Delivery Sequence -->
-            <div class="mt-12 bg-pistos-black text-white p-8 rounded-lg shadow-xl js-anim-ready animate-on-scroll-delayed" style="animation-delay: 1.4s;">
+            <div class="mt-12 bg-pistos-black text-white p-8 rounded-lg shadow-xl" data-aos="fade-up" data-aos-delay="600">
                 <h4 class="font-heading font-bold text-xl mb-6 flex items-center"><i data-lucide="rocket" class="w-5 h-5 mr-3 text-pistos-red"></i>Delivery Sequence</h4>
                 <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 text-sm font-medium">
                     <div class="flex-1 border border-white/20 p-4 rounded flex items-center justify-between">
@@ -144,9 +168,9 @@ import Layout from '../layouts/Layout.astro';
         </div>
         
         <div class="flex justify-start mt-24 mb-32">
-            <a href="/visuals" class="group flex items-center space-x-2 text-pistos-muted hover:text-pistos-black font-medium transition-colors">
+            <a href="/motion" class="group flex items-center space-x-2 text-pistos-muted hover:text-pistos-black font-medium transition-colors">
                 <i data-lucide="arrow-left" class="w-4 h-4 transform group-hover:-translate-x-1 transition-transform"></i>
-                <span>Prev: 3. Visual Identity</span>
+                <span>Prev: 5. Motion Rationale</span>
             </a>
         </div>
     </section>
