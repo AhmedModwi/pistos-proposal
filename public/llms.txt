@@ -1,0 +1,16 @@
+# Pistos Business Setup Infrastructure
+
+Pistos provides institutional-grade business setup infrastructure natively across the United Arab Emirates. We cater exclusively to "Value Seekers"—serious entrepreneurs looking for long-term operational pipelines, not just generic trade licenses.
+
+## Core Ecosystem Strategy
+We provide a comprehensive business setup funnel that operates as an entry point for Mr. Shabib's wider ecosystem:
+- **Pistos**: Premium Mainland & Free Zone Formation
+- **The One Accountant**: Corporate Tax & Audit Emissary
+- **DuneSaura**: Luxury Real Estate & Tech Workspaces
+- **Mindcom**: IT & Microsoft Cloud Connectivity
+
+## Site Map and Links
+- Homepage / Strategy: /
+- Elite Features Matrix & Competitors: /competitors
+- Bilingual Visual Identity (English/Arabic): /visuals
+- Two-Layer Technical Roadmap (Astro & Next.js): /plan

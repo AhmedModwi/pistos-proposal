@@ -35,88 +35,98 @@ import Layout from '../layouts/Layout.astro';
                     <table class="w-full text-left min-w-fit md:min-w-full">
                         <thead>
                             <tr class="bg-[#FAFAFA] border-b border-pistos-border text-pistos-black font-heading text-xs md:text-sm">
-                                <th class="p-3 md:p-4 font-bold sticky left-0 bg-[#FAFAFA] z-10 border-r border-pistos-border">Feature Dimension</th>
-                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 flex items-center justify-center space-x-1 text-yellow-600"><i data-lucide="award" class="w-4 h-4"></i><span class="hidden md:inline">Arnifi</span></th>
-                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center">Virtuzone</th>
-                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center">Creative Zone</th>
-                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center bg-blue-50/50">Shuraa</th>
-                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center">Dhanguard</th>
-                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center">Commitbiz</th>
-                                <th class="p-3 md:p-4 font-bold text-center">A&A Associate</th>
+                                <th class="p-3 md:p-4 font-bold sticky left-0 bg-[#FAFAFA] z-10 border-r border-pistos-border">Competitor</th>
+                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center"><i data-lucide="calculator" class="w-4 h-4 mx-auto mb-1 text-pistos-red"></i><span class="hidden md:block">Calculators</span></th>
+                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center"><i data-lucide="lock" class="w-4 h-4 mx-auto mb-1 text-pistos-red"></i><span class="hidden md:block">Portals</span></th>
+                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center"><i data-lucide="bot" class="w-4 h-4 mx-auto mb-1 text-pistos-red"></i><span class="hidden md:block">AI Tools</span></th>
+                                <th class="p-3 md:p-4 font-bold border-r border-gray-100 text-center"><i data-lucide="languages" class="w-4 h-4 mx-auto mb-1 text-pistos-red"></i><span class="hidden md:block">Multi-lang</span></th>
+                                <th class="p-3 md:p-4 font-bold text-center"><i data-lucide="book-open" class="w-4 h-4 mx-auto mb-1 text-pistos-red"></i><span class="hidden md:block">Content Hubs</span></th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-gray-100">
-                            
-                            <!-- Calculators -->
+                            <!-- Arnifi -->
                             <tr class="hover:bg-gray-50 transition-colors">
                                 <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border flex items-center space-x-2 whitespace-nowrap">
-                                    <i data-lucide="calculator" class="w-4 h-4 text-pistos-red"></i><span class="text-xs md:text-sm">Interactive Calculators</span>
+                                    <i data-lucide="award" class="w-4 h-4 text-yellow-600"></i><span class="text-xs md:text-sm">Arnifi</span>
                                 </td>
-                                <!-- Arnifi --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Virtuzone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Creative Zone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Shuraa --> <td class="p-3 md:p-4 text-center bg-blue-50/50"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Dhanguard --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Commitbiz --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- A&A Associate --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                            </tr>
-
-                            <!-- Portals -->
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border flex items-center space-x-2 whitespace-nowrap">
-                                    <i data-lucide="lock" class="w-4 h-4 text-pistos-red"></i><span class="text-xs md:text-sm">Customer Portals</span>
-                                </td>
-                                <!-- Arnifi --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Virtuzone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Creative Zone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Shuraa --> <td class="p-3 md:p-4 text-center bg-blue-50/50"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Dhanguard --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
-                                <!-- Commitbiz --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
-                                <!-- A&A Associate --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
-                            </tr>
-
-                            <!-- AI -->
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border flex items-center space-x-2 whitespace-nowrap">
-                                    <i data-lucide="bot" class="w-4 h-4 text-pistos-red"></i><span class="text-xs md:text-sm">AI Chatbots / Tools</span>
-                                </td>
-                                <!-- Arnifi --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Virtuzone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Creative Zone --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
-                                <!-- Shuraa --> <td class="p-3 md:p-4 text-center bg-blue-50/50"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Dhanguard --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
-                                <!-- Commitbiz --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
-                                <!-- A&A Associate --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
                             </tr>
                             
-                            <!-- Multi-lingual -->
+                            <!-- Virtuzone -->
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border flex items-center space-x-2 whitespace-nowrap">
-                                    <i data-lucide="languages" class="w-4 h-4 text-pistos-red"></i><span class="text-xs md:text-sm">Multi-language Support</span>
+                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border whitespace-nowrap pl-9">
+                                    <span class="text-xs md:text-sm">Virtuzone</span>
                                 </td>
-                                <!-- Arnifi --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
-                                <!-- Virtuzone --> <td class="p-3 md:p-4 text-center"><i data-lucide="alert-circle" class="w-5 h-5 mx-auto text-yellow-500" title="Partial"></i></td>
-                                <!-- Creative Zone --> <td class="p-3 md:p-4 text-center"><i data-lucide="alert-circle" class="w-5 h-5 mx-auto text-yellow-500" title="Partial"></i></td>
-                                <!-- Shuraa --> <td class="p-3 md:p-4 text-center bg-blue-50/50"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Dhanguard --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
-                                <!-- Commitbiz --> <td class="p-3 md:p-4 text-center"><i data-lucide="alert-circle" class="w-5 h-5 mx-auto text-yellow-500" title="Partial"></i></td>
-                                <!-- A&A Associate --> <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
                             </tr>
 
-                            <!-- Content -->
+                            <!-- Creative Zone -->
                             <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border flex items-center space-x-2 whitespace-nowrap">
-                                    <i data-lucide="book-open" class="w-4 h-4 text-pistos-red"></i><span class="text-xs md:text-sm">Deep Content Hubs</span>
+                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border whitespace-nowrap pl-9">
+                                    <span class="text-xs md:text-sm">Creative Zone</span>
                                 </td>
-                                <!-- Arnifi --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Virtuzone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Creative Zone --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Shuraa --> <td class="p-3 md:p-4 text-center bg-blue-50/50"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Dhanguard --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- Commitbiz --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
-                                <!-- A&A Associate --> <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
                             </tr>
 
+                            <!-- Shuraa -->
+                            <tr class="bg-blue-50/30 hover:bg-blue-50/50 transition-colors">
+                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-blue-50 z-10 border-r border-pistos-border whitespace-nowrap pl-9">
+                                    <span class="text-xs md:text-sm">Shuraa</span>
+                                </td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                            </tr>
+
+                            <!-- Dhanguard -->
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border whitespace-nowrap pl-9">
+                                    <span class="text-xs md:text-sm">Dhanguard</span>
+                                </td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                            </tr>
+
+                            <!-- Commitbiz -->
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border whitespace-nowrap pl-9">
+                                    <span class="text-xs md:text-sm">Commitbiz</span>
+                                </td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                            </tr>
+
+                            <!-- A&A Associate -->
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="p-3 md:p-4 font-semibold text-pistos-black sticky left-0 bg-inherit z-10 border-r border-pistos-border whitespace-nowrap pl-9">
+                                    <span class="text-xs md:text-sm">A&A Associate</span>
+                                </td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="x" class="w-5 h-5 mx-auto text-gray-300"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                                <td class="p-3 md:p-4 text-center"><i data-lucide="check-circle-2" class="w-5 h-5 mx-auto text-green-600"></i></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
