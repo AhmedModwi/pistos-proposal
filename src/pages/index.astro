@@ -2,34 +2,57 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="1. Strategic Premise">
-    <!-- The Personal Premise -->
+<Layout title="Executive Summary">
     <section class="max-w-4xl mx-auto">
         <h1 class="font-heading text-4xl md:text-5xl font-bold tracking-tight text-pistos-black mb-6 leading-tight">
-            An Ecosystem for <span class="text-pistos-red">Value Seekers.</span>
+            Pistos: <span class="text-pistos-red">Digital Proposal Summary</span>
         </h1>
         <div class="bg-pistos-surface border border-pistos-border p-8 rounded border-l-4 border-l-pistos-black shadow-sm space-y-6">
             <div>
-                <h2 class="font-heading text-xl font-bold text-pistos-black mb-2">1. The Catalyst Observation</h2>
+                <h2 class="font-heading text-xl font-bold text-pistos-black mb-2">What This Proposal Covers</h2>
                 <p class="text-lg leading-relaxed text-pistos-muted">
-                    Following my brief conversation with Mr. Shabib regarding his vision for Pistos and his existing portfolio, the strategic direction became remarkably clear. The goal is <strong>not</strong> to compete with the 200+ generic "price-shopping" agencies in Dubai. Instead, Pistos is engineered to attract <strong>Value Seekers</strong>—serious entrepreneurs looking for long-term operational infrastructure, not just a cheap trade license.
+                    This document outlines a digital strategy for <strong>Pistos</strong> — a business setup services company operating in the UAE. The proposal covers market positioning, competitor analysis, visual identity, and a phased execution plan for building the company's digital infrastructure.
                 </p>
             </div>
             <div class="border-t border-pistos-border pt-6">
-                <h2 class="font-heading text-xl font-bold text-pistos-black mb-2">2. The Ecosystem Advantage</h2>
+                <h2 class="font-heading text-xl font-bold text-pistos-black mb-2">Market Position</h2>
+                <p class="text-lg leading-relaxed text-pistos-muted">
+                    After analyzing over 200 business setup firms in the UAE, it is clear that the top-tier agencies have moved beyond static websites. They now offer interactive tools, client portals, and structured content libraries. Pistos is positioned to serve serious entrepreneurs looking for reliable, long-term operational infrastructure — not just a trade license.
+                </p>
+            </div>
+            <div class="border-t border-pistos-border pt-6">
+                <h2 class="font-heading text-xl font-bold text-pistos-black mb-2">The Two-Layer System</h2>
                 <p class="text-lg leading-relaxed text-pistos-muted mb-4">
-                    Pistos does not stand alone; it acts as the primary acquisition funnel for Mr. Shabib’s wider ecosystem. The true business model lies in cross-pollination. Pistos captures the client at genesis, and seamlessly feeds them into:
+                    Rather than building everything at once, the project is structured as two independent layers:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 font-mono text-sm text-pistos-black">
+                    <div class="border border-pistos-border rounded p-4 flex flex-col items-start space-y-2 bg-pistos-bg hover:border-pistos-black transition-colors">
+                        <i data-lucide="globe" class="w-5 h-5 text-pistos-red"></i>
+                        <span class="font-bold">Layer 1 — Public Website</span>
+                        <span class="text-xs text-pistos-muted">Astro-based. Fast, credible, SEO-optimized. Focused on business setup lead capture.</span>
+                    </div>
+                    <div class="border border-pistos-border rounded p-4 flex flex-col items-start space-y-2 bg-pistos-bg hover:border-pistos-black transition-colors">
+                        <i data-lucide="lock" class="w-5 h-5 text-pistos-red"></i>
+                        <span class="font-bold">Layer 2 — Client Portal</span>
+                        <span class="text-xs text-pistos-muted">Next.js-based. Interactive tools, dashboards, and ecosystem cross-sell after onboarding.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-pistos-border pt-6">
+                <h2 class="font-heading text-xl font-bold text-pistos-black mb-2">Ecosystem Integration</h2>
+                <p class="text-lg leading-relaxed text-pistos-muted mb-4">
+                    Pistos is the entry point into a wider group of companies. A client who starts with business setup can be naturally introduced to:
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-sm text-pistos-black">
                     <div class="border border-pistos-border rounded p-4 flex flex-col items-start space-y-2 bg-pistos-bg hover:border-pistos-black transition-colors">
                         <i data-lucide="calculator" class="w-5 h-5 text-pistos-red"></i>
                         <span class="font-bold">The One Accountant</span>
-                        <span class="text-xs text-pistos-muted">Tax & Audit Emissary</span>
+                        <span class="text-xs text-pistos-muted">Tax & Audit Services</span>
                     </div>
                     <div class="border border-pistos-border rounded p-4 flex flex-col items-start space-y-2 bg-pistos-bg hover:border-pistos-black transition-colors">
                         <i data-lucide="building" class="w-5 h-5 text-pistos-red"></i>
                         <span class="font-bold">DuneSaura</span>
-                        <span class="text-xs text-pistos-muted">Luxury Real Estate & Workspaces</span>
+                        <span class="text-xs text-pistos-muted">Real Estate & Workspaces</span>
                     </div>
                     <div class="border border-pistos-border rounded p-4 flex flex-col items-start space-y-2 bg-pistos-bg hover:border-pistos-black transition-colors">
                         <i data-lucide="monitor-stop" class="w-5 h-5 text-pistos-red"></i>
@@ -38,97 +61,28 @@ import Layout from '../layouts/Layout.astro';
                     </div>
                 </div>
             </div>
-
-            <!-- The Architectural Crisis (Dramatic Redesign) -->
-            <div class="mt-20 pt-16 border-t-2 border-pistos-black" data-aos="fade-up">
-                <div class="flex flex-col items-center text-center mb-12">
-                    <i data-lucide="split" class="w-12 h-12 text-pistos-red mb-4"></i>
-                    <h2 class="font-heading text-3xl md:text-5xl font-black text-pistos-black uppercase tracking-tight">The Architectural Fork</h2>
-                    <p class="text-xl text-pistos-muted mt-4 max-w-2xl">This single decision will define the trajectory of the entire digital infrastructure.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-pistos-border overflow-hidden rounded-lg shadow-xl" data-aos="fade-up" data-aos-delay="200">
-                    
-                    <!-- Option A: Absher -->
-                    <div class="bg-pistos-black text-white p-10 md:p-14 group hover:bg-[#111] transition-colors relative overflow-hidden">
-                        <div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity transform group-hover:scale-110">
-                            <i data-lucide="crosshairs" class="w-48 h-48 text-white"></i>
-                        </div>
-                        <div class="relative z-10">
-                            <div class="flex items-center justify-between mb-8 border-b border-white/20 pb-4">
-                                <span class="text-xs font-mono text-pistos-red tracking-widest uppercase">Option A</span>
-                                <span class="text-xs bg-pistos-red text-white px-3 py-1 rounded font-mono font-bold">Hyper-Focused</span>
-                            </div>
-                            <h3 class="font-heading text-3xl font-bold mb-4">The Setup Specialist</h3>
-                            <p class="text-gray-400 text-lg leading-relaxed mb-8">
-                                A highly targeted portal, explicitly modeled after the <strong>DUQE</strong> conversion approach. It focuses the entire homepage narrative exclusively on <strong>Business Setup in the UAE</strong>. The other services (Tax, HR, IT, Real Estate) are treated as secondary cross-sells introduced later in the funnel.
-                            </p>
-                            <div class="space-y-3">
-                                <div class="flex items-start space-x-3 text-sm text-gray-300">
-                                    <i data-lucide="zap" class="w-5 h-5 text-green-400 shrink-0 mt-0.5"></i>
-                                    <span>Extreme Conversion Rates for Setup leads.</span>
-                                </div>
-                                <div class="flex items-start space-x-3 text-sm text-gray-300">
-                                    <i data-lucide="alert-triangle" class="w-5 h-5 text-yellow-500 shrink-0 mt-0.5"></i>
-                                    <span>Hides the massive scale of the wider Shabib ecosystem initially.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Option B: HLB -->
-                    <div class="bg-white text-pistos-black p-10 md:p-14 group hover:bg-[#f8f8f8] transition-colors relative overflow-hidden">
-                        <div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity transform group-hover:scale-110">
-                            <i data-lucide="landmark" class="w-48 h-48 text-pistos-black"></i>
-                        </div>
-                        <div class="relative z-10">
-                            <div class="flex items-center justify-between mb-8 border-b border-pistos-border pb-4">
-                                <span class="text-xs font-mono text-pistos-muted tracking-widest uppercase">Option B</span>
-                                <span class="text-xs bg-pistos-black text-white px-3 py-1 rounded font-mono font-bold">Comprehensive</span>
-                            </div>
-                            <h3 class="font-heading text-3xl font-bold mb-4">The Ecosystem Showcase</h3>
-                            <p class="text-pistos-muted text-lg leading-relaxed mb-8">
-                                A massive corporate catalog, explicitly modeled after the <strong>HLB HAMT</strong> ecosystem approach. It displays the entire scope of Mr. Shabib's companies equally on the homepage: Setup, Audit & Tax, IT, and Real Estate—signaling uncompromising institutional weight.
-                            </p>
-                            <div class="space-y-3">
-                                <div class="flex items-start space-x-3 text-sm text-pistos-muted">
-                                    <i data-lucide="shield" class="w-5 h-5 text-pistos-black shrink-0 mt-0.5"></i>
-                                    <span>Immediate Institutional Authority and Trust.</span>
-                                </div>
-                                <div class="flex items-start space-x-3 text-sm text-pistos-muted">
-                                    <i data-lucide="alert-triangle" class="w-5 h-5 text-pistos-red shrink-0 mt-0.5"></i>
-                                    <span>A crowded UI creates decision-fatigue for clients just seeking a simple license.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                
-                <!-- The Verdict -->
-                <div class="mt-12 bg-pistos-red text-white p-8 rounded-lg shadow-2xl relative overflow-hidden" data-aos="fade-up" data-aos-delay="400">
-                    <div class="absolute inset-0 bg-black/10"></div>
-                    <div class="relative z-10 flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
-                        <i data-lucide="check-circle-2" class="w-12 h-12 text-white/90 shrink-0"></i>
-                        <div>
-                            <h4 class="font-heading font-bold text-xl mb-2">The CTO Recommendation: The Hybrid Strategy</h4>
-                            <p class="text-white/90 leading-relaxed text-lg font-medium">
-                                We architect the "Setup Specialist" model for the public-facing site to aggressively capture the initial lead without overwhelming them. Once they are inside the Client Portal ecosystem (after onboarding), we deploy the "Ecosystem Showcase" to seamlessly upsell Tax, IT, and Real Estate.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-        
+
         <p class="text-2xl font-heading mt-16 mb-8 text-center text-pistos-black leading-relaxed italic border-t border-b border-pistos-border py-8">
-            "I don't sell licenses.<br>I sell institutional trust.<br>And the website must visually and structurally prove that."
+            "A digital presence that reflects the seriousness<br>and operational depth of the business."
         </p>
 
-        <div class="flex justify-end mt-12 mb-32">
-            <a href="/competitors" class="group flex items-center space-x-2 text-pistos-red hover:text-[#852326] font-medium transition-colors">
-                <span>Next: 2. Market Benchmarks</span>
-                <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 mb-32" data-aos="fade-up">
+            <a href="/strategy" class="group border border-pistos-border rounded p-4 hover:border-pistos-red transition-colors text-center">
+                <span class="text-xs text-pistos-muted block mb-1">01</span>
+                <span class="font-heading font-bold text-sm text-pistos-black group-hover:text-pistos-red transition-colors">Strategy</span>
+            </a>
+            <a href="/competitors" class="group border border-pistos-border rounded p-4 hover:border-pistos-red transition-colors text-center">
+                <span class="text-xs text-pistos-muted block mb-1">02</span>
+                <span class="font-heading font-bold text-sm text-pistos-black group-hover:text-pistos-red transition-colors">Market</span>
+            </a>
+            <a href="/visuals" class="group border border-pistos-border rounded p-4 hover:border-pistos-red transition-colors text-center">
+                <span class="text-xs text-pistos-muted block mb-1">03</span>
+                <span class="font-heading font-bold text-sm text-pistos-black group-hover:text-pistos-red transition-colors">Identity</span>
+            </a>
+            <a href="/plan" class="group border border-pistos-border rounded p-4 hover:border-pistos-red transition-colors text-center">
+                <span class="text-xs text-pistos-muted block mb-1">04</span>
+                <span class="font-heading font-bold text-sm text-pistos-black group-hover:text-pistos-red transition-colors">Roadmap</span>
             </a>
         </div>
     </section>
